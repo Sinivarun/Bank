@@ -23,7 +23,13 @@ h1{
 }
 
 
+.btn{
+   padding-top:10%;
+   padding-left: 40%;
 
+
+
+}
 .navbar-nav{
   
   
@@ -45,6 +51,6 @@ footer {
     height:100%;
 }
 #navbar{
-    background-color: #5577a2;
+    background-color:#05090e;
     color: white;
 }
