@@ -18,84 +18,131 @@
   <header id="navbar">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-white bg-black ">
-        <div class="container">
+      <div class="container">
 
-            <img src="./bank.jpg" style="width:10%;height:10%;">
-            <h1>NATEAST BANK</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-5 " id="navbarNav">
-                <ul class="navbar-nav   ">
+        <img src="./bank.jpg" style="width:10%;height:10%;">
+        <h1>NATEAST BANK</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-5 " id="navbarNav">
+          <ul class="navbar-nav   ">
 
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="./index.html">Back</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" onclick="Logout()">Logout </a>
-                    </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="./index.html">Back</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" onclick="Logout()">Logout </a>
+            </li>
 
-                </ul>
-            </div>
+          </ul>
         </div>
-    </nav>
-</header>
-    <!-- secondpart -->
-    <!-- <div class="section"> -->
-      <div class="row pl-5" id="sec">
-<p>
-          Today, it has more than 7.5 million personal customers and 850,000 small business accounts. In
-          Northern Ireland, it operates through its Ulster Bank brand
-
-      </p>
       </div>
+    </nav>
+  </header>
+  <!-- secondpart -->
+  <!-- <div class="section"> -->
+  <div class="row pl-5" id="sec">
+    <p>
+      Today, it has more than 7.5 million personal customers and 850,000 small business accounts. In
+      Northern Ireland, it operates through its Ulster Bank brand
+
+    </p>
+  </div>
   </div>
   <!-- body -->
-  <div class="container"></div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4">
+
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" id="login-form">
 
 
-  <div class="col-4">
 
-  </div>
-  <div class="col-8" id="login-form" >
-
-    <div id="heading"><h4  >Login</h4></div>
-    <div class="form-group">
-      <label for="acc_number">Enter AccountNumber</label>
-      <input type="text" class="form-control" id="acc_number" placeholder="AccountNumber">
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" placeholder="Password">
-    </div>
-
-    <div class="btn">
-      <button type="submit" class="btn btn-primary" onclick="bank.authenticate()">Login</button>
-    </div>
-    
-
-  </div>
+        <div class="login">
+          <div id="heading">
+            <h4>Login</h4>
+          </div>
   
-    <footer>
-            <p>Copyright &copy; 2020 The Dream Roast.</p>
-        </footer>
+          <div class="form-group">
+            <label for="acc_number"> AccountNumber</label>
+            <input type="text" class="form-control" id="acc_number" placeholder="AccountNumber">
+          </div>
+  
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+  
+  
+          <div class="  btn">
+            <button type="submit" class="btn btn-primary" onclick="bank.authenticate()">Login</button>
+          </div>
+  
+
+
+
+
+
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2020 The Dream Roast.</p>
+  </footer>
 
   <style>
-    #login-form{
-      padding-left: 40%;
-      margin-top: 5%;
-     padding-bottom:20px;
-      
-    }
-    #heading{
+    #heading {
       text-align: center;
+    }
+
+    #acc_number {
+      width: 300px;
+    }
+
+    #password {
+      width: 300px;
+
+    }
+
+    .login {
+     
+      margin-top: 50px;
+  margin-left:20px;
+      background-color: #05090e;
+      padding: 20px;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      max-height:400px;
+      
+      
+
+    }
+    .btn{
+      width:100px;
+      height:50px;
+      padding-left:30%;
+      padding-top: 10px;
     }
   </style>
 </body>

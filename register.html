@@ -2,104 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link  rel="stylesheet"  href="./bankstyle.css">
-        <script src="./bankscript.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bankstyle.css">
+  <script src="./bankscript.js"></script>
+  <style>
+    .register {
+      padding-left: 300px;
+      margin-top: 50px;
+      padding: 20px;
+      align-items: center;
+      background-color: #05090e;
+      width:600px;
+      color: white;
+
+    }
+
+    #heading {
+      text-align: center;
+    }
+
+    input[type=text] {
+      width: 400px;
+    }
+
+    input[type=password] {
+      width: 400px;
+    }
+
+    input[type=number] {
+      width: 400px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 50px;
+      padding-left: 30%;
+      padding-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
   <header id="navbar">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-white bg-black ">
-        <div class="container">
+      <div class="container">
 
-            <img src="./bank.jpg" style="width:10%;height:10%;">
-            <h1>NATEAST BANK</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-5 " id="navbarNav">
-                <ul class="navbar-nav   ">
+        <img src="./bank.jpg" style="width:10%;height:10%;">
+        <h1>NATEAST BANK</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-5 " id="navbarNav">
+          <ul class="navbar-nav   ">
 
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">Contact Us </a>
-                    </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">Contact Us </a>
+            </li>
 
-                </ul>
-            </div>
+          </ul>
         </div>
-    </nav>
-</header>
-     <!-- secondpart -->
-     <!-- <div class="section"> -->
-      <div class="row pl-5" id="sec">
-<p>
-          Today, it has more than 7.5 million personal customers and 850,000 small business accounts. In
-          Northern Ireland, it operates through its Ulster Bank brand
-
-      </p>
       </div>
+    </nav>
+  </header>
+  <!-- secondpart -->
+  <!-- <div class="section"> -->
+  <div class="row pl-5" id="sec">
+    <p>
+      Today, it has more than 7.5 million personal customers and 850,000 small business accounts. In
+      Northern Ireland, it operates through its Ulster Bank brand
+
+    </p>
+  </div>
   <!-- </div> -->
 
 
   <!-- body register -->
-    <div class="container">
-        
-        
-        <div class="col-4"></div>
-        <div class="col-8" id="register-form">
-           
-              <div id="heading"> <h4>Welcome Dear Customer</h4></div>
-                <div class="form-group" >
-                  <label for="uname">Enter name</label>
-                  <input type="text" class="form-control" id="uname" placeholder="username">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="acc_number">Enter AccountNumber</label>
-                    <input type="text" class="form-control" id="acc_number" placeholder="AccountNumber">
-                  </div>
-                  <div class="form-group">
-                    <label for="Balance">Enter Balance</label>
-                    <input type="number" class="form-control" id="balance" placeholder="Balance">
-                  </div>
-                  <div class="btn">
-                <button type="submit" class="btn btn-primary" onclick="bank.createAccount()" >Register</button>
-            </div>
-           
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12" id="register-form">
+          <div class="register">
+          <div id="heading">
+            <h4>REGISTRATION FORM</h4>
+          </div>
+
+          <div class="form-group">
+            <label for="uname">Enter name</label>
+            <input type="text" class="form-control" id="uname" placeholder="username">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <label for="acc_number">Enter AccountNumber</label>
+            <input type="text" class="form-control" id="acc_number" placeholder="AccountNumber">
+          </div>
+          <div class="form-group">
+            <label for="Balance">Enter Balance</label>
+            <input type="number" class="form-control" id="balance" placeholder="Balance">
+          </div>
+          <div class="btn">
+            <button type="submit" class="btn btn-primary" onclick="bank.createAccount()">Register</button>
+          </div>
         </div>
-        
-    <style>
-      #register-form{
-        padding-left: 40%;
-        margin-top: 5%;
-       padding-bottom:20px;
-        
-      }
-      #heading{
-        text-align: center;
-      }
-    </style>
+        </div>
+
+
+        <div class="col-lg-4"></div>
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+    
 </body>
+<footer>
+  <p>Copyright &copy; 2020 The Dream Roast.</p>
+</footer>
 
 
 </html>

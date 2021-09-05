@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- javascript bundle with popper -->
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
@@ -17,6 +17,17 @@
 
   <link rel="stylesheet" href="./bankstyle.css">
   <script src="./bankscript.js"></script>
+  <style>
+    .list-group{
+      padding-top: 60px;
+      height: 300px;
+      background-color: #05090e;
+      color: white;
+      align-items: center;
+      margin-top: 50px;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -24,45 +35,45 @@
   <header id="navbar">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-white bg-black ">
-        <div class="container">
+      <div class="container">
 
-            <img src="./bank.jpg" style="width:10%;height:10%;">
-            <h1>NATEAST BANK</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-5 " id="navbarNav">
-                <ul class="navbar-nav   ">
+        <img src="./bank.jpg" style="width:10%;height:10%;">
+        <h1>NATEAST BANK</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-5 " id="navbarNav">
+          <ul class="navbar-nav   ">
 
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="./index.html">Back</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="./index.html">logout </a>
-                    </li>
-                   
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="./index.html">Back</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="./index.html">logout </a>
+            </li>
 
-                </ul>
-            </div>
+
+          </ul>
         </div>
-    </nav>
-</header>
-    <!-- secondpart -->
-    <!-- <div class="section"> -->
-      <div class="row pl-5" id="sec">
-      <p>
-      welcome user
-        <span id="user"></span>
-
-      </p>
       </div>
+    </nav>
+  </header>
+  <!-- secondpart -->
+  <!-- <div class="section"> -->
+  <div class="row pl-5" id="sec">
+    <p>
+      welcome user
+      <span id="user"></span>
+
+    </p>
+  </div>
   <!-- </div> -->
 
 
@@ -72,13 +83,11 @@
   <!-- body user -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-4"></div>
-      <div class="col-6">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
 
-        
-        
         <div class="list-group">
-         
+
           <button type="button" class="list-group-item list-group-item-action " onclick="bank.balanceEnquiry()">
             BalanceEnquiry
           </button>
@@ -87,9 +96,13 @@
             FundTransfer
           </button>
           <!-- button<button type="button" class="list-group-item list-group-item-action"></button>
-          <button type="button" class="list-group-item list-group-item-action"></button>
-          < type="button" class="list-group-item list-group-item-action"></button> -->
+             <button type="button" class="list-group-item list-group-item-action"></button>
+            < type="button" class="list-group-item list-group-item-action"></button> -->
         </div>
+
+
+
+
       </div>
       <div class="col-2">
 
@@ -107,28 +120,30 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-           <input type="text" id="toacno" class="form-control mt-2" placeholder="To Account number">
-           <input type="number" id="amt" class="form-control mt-2" placeholder="amount">
+            <input type="text" id="toacno" class="form-control mt-2" placeholder="To Account number">
+            <input type="number" id="amt" class="form-control mt-2" placeholder="amount">
           </div>
           <div class="modal-footer">
-            <button   type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button  type="button" class="btn btn-primary" onclick="bank.fundTransfer()">confirm</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="bank.fundTransfer()">confirm</button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="col-lg-4"></div>
   </div>
 
   <footer>
     <p>Copyright &copy; 2020 The Dream Roast.</p>
-</footer>
+  </footer>
 
 
 </body>
 
 <script>
   let logeduser = JSON.parse(sessionStorage.getItem(sessionStorage.key(0)))
- console.log("hai");
+  console.log("hai");
   console.log(logeduser);
   user.innerHTML = logeduser.accno;
 </script>
